@@ -61,8 +61,8 @@ class PythonScriptExecutor: NSObject {
         
         var argu = arguments
         argu.insert(contentsOf: [path], at: 0)
-        task.arguments = arguments
-        print ("With arguments:", arguments)
+        task.arguments = argu
+        print ("With arguments:", argu)
         
         let outputPipe = Pipe()
         let errorPipe = Pipe()
