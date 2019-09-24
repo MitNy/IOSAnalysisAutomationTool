@@ -217,6 +217,7 @@ class IPADump(object):
 
     def run(self):
         self.load_agent()
+        self.output = os.environ['HOME'] + '/Downloads/'
         if self.output is None:
             ipa_name = '.'.join([self.app.name, 'ipa'])
         elif os.path.isdir(self.output):
