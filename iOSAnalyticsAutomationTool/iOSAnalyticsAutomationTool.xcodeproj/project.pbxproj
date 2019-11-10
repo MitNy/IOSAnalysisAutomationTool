@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		464A22F6233BAF950027EDA7 /* hooking.py in Resources */ = {isa = PBXBuildFile; fileRef = 464A22F5233BAF950027EDA7 /* hooking.py */; };
+		465291BD233B824C009E9C74 /* FunctionHookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465291BC233B824C009E9C74 /* FunctionHookViewController.swift */; };
 		6C2C977D9A74B0E8439DC708 /* Pods_iOSAnalyticsAutomationTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C00683A9E21AEA23AE792D64 /* Pods_iOSAnalyticsAutomationTool.framework */; };
 		A48C737E233A42090011A6A3 /* PythonScriptExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48C737D233A42090011A6A3 /* PythonScriptExecutor.swift */; };
 		A48C7380233A4B6F0011A6A3 /* dump.py in Resources */ = {isa = PBXBuildFile; fileRef = A48C737F233A4B6F0011A6A3 /* dump.py */; };
@@ -42,6 +44,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		464A22F5233BAF950027EDA7 /* hooking.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = hooking.py; sourceTree = "<group>"; };
+		465291BC233B824C009E9C74 /* FunctionHookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionHookViewController.swift; sourceTree = "<group>"; };
 		9BD64511D5E0659CC9CEF206 /* Pods-iOSAnalyticsAutomationTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSAnalyticsAutomationTool.release.xcconfig"; path = "Target Support Files/Pods-iOSAnalyticsAutomationTool/Pods-iOSAnalyticsAutomationTool.release.xcconfig"; sourceTree = "<group>"; };
 		A37858744205817F9C98F16B /* Pods-iOSAnalyticsAutomationTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSAnalyticsAutomationTool.debug.xcconfig"; path = "Target Support Files/Pods-iOSAnalyticsAutomationTool/Pods-iOSAnalyticsAutomationTool.debug.xcconfig"; sourceTree = "<group>"; };
 		A48C737D233A42090011A6A3 /* PythonScriptExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PythonScriptExecutor.swift; sourceTree = "<group>"; };
@@ -101,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				A4B1D028233A7752008E56E2 /* agent */,
+				464A22F5233BAF950027EDA7 /* hooking.py */,
 				A4B1D025233A5F0B008E56E2 /* find_device.py */,
 				A48C737F233A4B6F0011A6A3 /* dump.py */,
 			);
@@ -143,6 +148,7 @@
 				D3F0E02A22F02DD8008974BE /* HashCheckViewController.swift */,
 				D3F0E02C22F02EF0008974BE /* FileExtractViewController.swift */,
 				A48C737D233A42090011A6A3 /* PythonScriptExecutor.swift */,
+				465291BC233B824C009E9C74 /* FunctionHookViewController.swift */,
 			);
 			path = iOSAnalyticsAutomationTool;
 			sourceTree = "<group>";
@@ -212,6 +218,7 @@
 				A4B1D026233A5F0B008E56E2 /* find_device.py in Resources */,
 				D3254AA822DEF2EC008EFCA8 /* Assets.xcassets in Resources */,
 				A4B1D029233A7752008E56E2 /* agent in Resources */,
+				464A22F6233BAF950027EDA7 /* hooking.py in Resources */,
 				D3254AAB22DEF2EC008EFCA8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +274,7 @@
 			files = (
 				D3254AA622DEF2EB008EFCA8 /* ViewController.swift in Sources */,
 				A48C737E233A42090011A6A3 /* PythonScriptExecutor.swift in Sources */,
+				465291BD233B824C009E9C74 /* FunctionHookViewController.swift in Sources */,
 				D3F0E02B22F02DD8008974BE /* HashCheckViewController.swift in Sources */,
 				D3254AB922DEF34C008EFCA8 /* fileExtractTable.swift in Sources */,
 				D3F0E02D22F02EF0008974BE /* FileExtractViewController.swift in Sources */,
@@ -415,7 +423,7 @@
 				CODE_SIGN_ENTITLEMENTS = iOSAnalyticsAutomationTool/iOSAnalyticsAutomationTool.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = L68DTW7N3N;
+				DEVELOPMENT_TEAM = JAUHFLH46Y;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -439,7 +447,7 @@
 				CODE_SIGN_ENTITLEMENTS = iOSAnalyticsAutomationTool/iOSAnalyticsAutomationTool.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = L68DTW7N3N;
+				DEVELOPMENT_TEAM = JAUHFLH46Y;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",

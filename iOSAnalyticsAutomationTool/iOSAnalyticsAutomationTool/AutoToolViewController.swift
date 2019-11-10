@@ -21,20 +21,23 @@ class AutoToolViewController: NSViewController {
     }
     
     @IBAction func commandExecute(_ sender: Any) {
-        var log: String
+        var logString: String
         if (commandListButton.selectedItem?.title == "Decompile") {
             if (appOrPathLabel.stringValue == "") {
-                log = "[*] No application name"
-                print (log)
-                logScrollView.insertText(log)
+                logString = "[*] No application name\n"
+                print (logString)
+                DispatchQueue.main.async {
+                    let textView = self.logScrollView.documentView as? NSTextView
+                    textView?.isEditable = true
+                    self.logScrollView.documentView!.insertText("")
+                    textView?.string = textView!.string + logString
+                    textView?.isEditable = false
+                }
             } else {
                 let appName = appOrPathLabel.stringValue
                 var output: String
                 var err: String
                 (output, err) = PythonScriptExecutor.executeScriptWithArguments(fileName: "dump", arguments: [appName, Bundle.main.resourcePath!])
-                print ("Done.")
-                print (output)
-                print (err)
                 
             }
         }
@@ -45,6 +48,34 @@ class AutoToolViewController: NSViewController {
         // Do view setup here.
         
         updateDeviceList()
+    }
+    
+    override func viewDidAppear() {
+        NotificationCenter.default.addObserver(self, selector: #selector(updateLog(_notifiction:)),
+                                               name: NSNotification.Name(rawValue: "AutoToolLogSender"), object: nil)
+    }
+    
+    override func viewDidDisappear() {
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name(rawValue: "AutoToolLogSender"), object: nil)
+        DispatchQueue.main.async {
+            let textView = self.logScrollView.documentView as? NSTextView
+            textView?.isEditable = true
+            textView?.string = ""
+            textView?.isEditable = false
+        }
+    }
+    
+    @objc func updateLog(_notifiction: Notification) {
+        guard let logString = _notifiction.userInfo?["logString"] as? String else { return }
+        print("[log]", logString)
+        DispatchQueue.main.async {
+            let textView = self.logScrollView.documentView as? NSTextView
+            textView?.isEditable = true
+            self.logScrollView.documentView!.insertText("")
+            //self.logScrollView.scrollsDynamically = true
+            textView?.string = textView!.string + logString
+            textView?.isEditable = false
+        }
     }
     
     func updateDeviceList() {
