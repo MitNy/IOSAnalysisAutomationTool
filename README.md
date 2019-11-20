@@ -3,8 +3,7 @@
 
 ## 기능 구현
 - [x] 2019.06.12 HashCheck
-- [ ] Auto Tool
-- [ ] FileExtract
-- [ ] MemoryDump
-- [ ] FunctionHook
+- [x] Re-DeSign
+- [x] MemoryDump
+- [x] FunctionHook
 
