@@ -7,8 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		461D0FBD238571160092DAC2 /* do_scp.py in Resources */ = {isa = PBXBuildFile; fileRef = 461D0FBC238571160092DAC2 /* do_scp.py */; };
+		461D0FC1238579280092DAC2 /* utils.py in Resources */ = {isa = PBXBuildFile; fileRef = 461D0FBE238579280092DAC2 /* utils.py */; };
+		461D0FC2238579280092DAC2 /* fridump.py in Resources */ = {isa = PBXBuildFile; fileRef = 461D0FBF238579280092DAC2 /* fridump.py */; };
+		461D0FC3238579280092DAC2 /* dumper.py in Resources */ = {isa = PBXBuildFile; fileRef = 461D0FC0238579280092DAC2 /* dumper.py */; };
+		461D0FC5238583A90092DAC2 /* processData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461D0FC4238583A90092DAC2 /* processData.swift */; };
 		464A22F6233BAF950027EDA7 /* hooking.py in Resources */ = {isa = PBXBuildFile; fileRef = 464A22F5233BAF950027EDA7 /* hooking.py */; };
 		465291BD233B824C009E9C74 /* FunctionHookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465291BC233B824C009E9C74 /* FunctionHookViewController.swift */; };
+		46719D05238565220005373E /* MemoryDumpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46719D04238565220005373E /* MemoryDumpViewController.swift */; };
+		46719D0723856ABD0005373E /* do_ssh.py in Resources */ = {isa = PBXBuildFile; fileRef = 46719D0623856ABD0005373E /* do_ssh.py */; };
+		46719D0A2385700D0005373E /* binarys in Resources */ = {isa = PBXBuildFile; fileRef = 46719D0823856DEE0005373E /* binarys */; };
+		46719D0C238570460005373E /* frida-server-12.7.22-ios-arm64 in Resources */ = {isa = PBXBuildFile; fileRef = 46719D0B238570460005373E /* frida-server-12.7.22-ios-arm64 */; };
 		6C2C977D9A74B0E8439DC708 /* Pods_iOSAnalyticsAutomationTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C00683A9E21AEA23AE792D64 /* Pods_iOSAnalyticsAutomationTool.framework */; };
 		A48C737E233A42090011A6A3 /* PythonScriptExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48C737D233A42090011A6A3 /* PythonScriptExecutor.swift */; };
 		A48C7380233A4B6F0011A6A3 /* dump.py in Resources */ = {isa = PBXBuildFile; fileRef = A48C737F233A4B6F0011A6A3 /* dump.py */; };
@@ -44,8 +53,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		461D0FBC238571160092DAC2 /* do_scp.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = do_scp.py; sourceTree = "<group>"; };
+		461D0FBE238579280092DAC2 /* utils.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = utils.py; sourceTree = "<group>"; };
+		461D0FBF238579280092DAC2 /* fridump.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = fridump.py; sourceTree = "<group>"; };
+		461D0FC0238579280092DAC2 /* dumper.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = dumper.py; sourceTree = "<group>"; };
+		461D0FC4238583A90092DAC2 /* processData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = processData.swift; sourceTree = "<group>"; };
 		464A22F5233BAF950027EDA7 /* hooking.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = hooking.py; sourceTree = "<group>"; };
 		465291BC233B824C009E9C74 /* FunctionHookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionHookViewController.swift; sourceTree = "<group>"; };
+		46719D04238565220005373E /* MemoryDumpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryDumpViewController.swift; sourceTree = "<group>"; };
+		46719D0623856ABD0005373E /* do_ssh.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = do_ssh.py; sourceTree = "<group>"; };
+		46719D0823856DEE0005373E /* binarys */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; path = binarys; sourceTree = SOURCE_ROOT; };
+		46719D0B238570460005373E /* frida-server-12.7.22-ios-arm64 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = "frida-server-12.7.22-ios-arm64"; path = "binarys/frida-server-12.7.22-ios-arm64"; sourceTree = "<group>"; };
 		9BD64511D5E0659CC9CEF206 /* Pods-iOSAnalyticsAutomationTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSAnalyticsAutomationTool.release.xcconfig"; path = "Target Support Files/Pods-iOSAnalyticsAutomationTool/Pods-iOSAnalyticsAutomationTool.release.xcconfig"; sourceTree = "<group>"; };
 		A37858744205817F9C98F16B /* Pods-iOSAnalyticsAutomationTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSAnalyticsAutomationTool.debug.xcconfig"; path = "Target Support Files/Pods-iOSAnalyticsAutomationTool/Pods-iOSAnalyticsAutomationTool.debug.xcconfig"; sourceTree = "<group>"; };
 		A48C737D233A42090011A6A3 /* PythonScriptExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PythonScriptExecutor.swift; sourceTree = "<group>"; };
@@ -104,10 +122,15 @@
 		A4B1D027233A5F12008E56E2 /* scripts */ = {
 			isa = PBXGroup;
 			children = (
+				461D0FC0238579280092DAC2 /* dumper.py */,
+				461D0FBF238579280092DAC2 /* fridump.py */,
+				461D0FBE238579280092DAC2 /* utils.py */,
 				A4B1D028233A7752008E56E2 /* agent */,
 				464A22F5233BAF950027EDA7 /* hooking.py */,
 				A4B1D025233A5F0B008E56E2 /* find_device.py */,
 				A48C737F233A4B6F0011A6A3 /* dump.py */,
+				46719D0623856ABD0005373E /* do_ssh.py */,
+				461D0FBC238571160092DAC2 /* do_scp.py */,
 			);
 			path = scripts;
 			sourceTree = "<group>";
@@ -115,6 +138,8 @@
 		D3254A9722DEF2EB008EFCA8 = {
 			isa = PBXGroup;
 			children = (
+				46719D0B238570460005373E /* frida-server-12.7.22-ios-arm64 */,
+				46719D0823856DEE0005373E /* binarys */,
 				A4B1D027233A5F12008E56E2 /* scripts */,
 				D3254AA222DEF2EB008EFCA8 /* iOSAnalyticsAutomationTool */,
 				D3254AA122DEF2EB008EFCA8 /* Products */,
@@ -142,6 +167,7 @@
 				D3254AA522DEF2EB008EFCA8 /* ViewController.swift */,
 				D3254AA722DEF2EC008EFCA8 /* Assets.xcassets */,
 				D3254AA922DEF2EC008EFCA8 /* Main.storyboard */,
+				461D0FC4238583A90092DAC2 /* processData.swift */,
 				D3254AAC22DEF2EC008EFCA8 /* Info.plist */,
 				D3254AAD22DEF2EC008EFCA8 /* iOSAnalyticsAutomationTool.entitlements */,
 				D3F0E02622F02390008974BE /* AutoToolViewController.swift */,
@@ -149,6 +175,7 @@
 				D3F0E02C22F02EF0008974BE /* FileExtractViewController.swift */,
 				A48C737D233A42090011A6A3 /* PythonScriptExecutor.swift */,
 				465291BC233B824C009E9C74 /* FunctionHookViewController.swift */,
+				46719D04238565220005373E /* MemoryDumpViewController.swift */,
 			);
 			path = iOSAnalyticsAutomationTool;
 			sourceTree = "<group>";
@@ -214,11 +241,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				461D0FC2238579280092DAC2 /* fridump.py in Resources */,
+				46719D0C238570460005373E /* frida-server-12.7.22-ios-arm64 in Resources */,
+				461D0FC1238579280092DAC2 /* utils.py in Resources */,
+				461D0FC3238579280092DAC2 /* dumper.py in Resources */,
+				46719D0A2385700D0005373E /* binarys in Resources */,
+				461D0FBD238571160092DAC2 /* do_scp.py in Resources */,
 				A48C7380233A4B6F0011A6A3 /* dump.py in Resources */,
 				A4B1D026233A5F0B008E56E2 /* find_device.py in Resources */,
 				D3254AA822DEF2EC008EFCA8 /* Assets.xcassets in Resources */,
 				A4B1D029233A7752008E56E2 /* agent in Resources */,
 				464A22F6233BAF950027EDA7 /* hooking.py in Resources */,
+				46719D0723856ABD0005373E /* do_ssh.py in Resources */,
 				D3254AAB22DEF2EC008EFCA8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,7 +312,9 @@
 				D3F0E02B22F02DD8008974BE /* HashCheckViewController.swift in Sources */,
 				D3254AB922DEF34C008EFCA8 /* fileExtractTable.swift in Sources */,
 				D3F0E02D22F02EF0008974BE /* FileExtractViewController.swift in Sources */,
+				461D0FC5238583A90092DAC2 /* processData.swift in Sources */,
 				D3254ABA22DEF34C008EFCA8 /* HashCheckController.swift in Sources */,
+				46719D05238565220005373E /* MemoryDumpViewController.swift in Sources */,
 				D3254AB822DEF34C008EFCA8 /* fileExtractController.swift in Sources */,
 				D3F0E02822F02390008974BE /* AutoToolViewController.swift in Sources */,
 				D3254AB722DEF34C008EFCA8 /* fileExtractData.swift in Sources */,

@@ -88,6 +88,8 @@ class PythonScriptExecutor: NSObject {
                                                     object:self, userInfo: userInfo)
                     NotificationCenter.default.post(name: NSNotification.Name(rawValue: "HookingLogSender"),
                     object:self, userInfo: userInfo)
+                    NotificationCenter.default.post(name: NSNotification.Name(rawValue: "DumperLogSender"),
+                    object:self, userInfo: userInfo)
                 }
             } else {
                 print("Error decoding data: \(pipe.availableData)")
@@ -104,6 +106,8 @@ class PythonScriptExecutor: NSObject {
                     NotificationCenter.default.post(name: NSNotification.Name(rawValue: "AutoToolLogSender"),
                                                     object:self, userInfo: userInfo)
                     NotificationCenter.default.post(name: NSNotification.Name(rawValue: "HookingLogSender"),
+                    object:self, userInfo: userInfo)
+                    NotificationCenter.default.post(name: NSNotification.Name(rawValue: "DumperLogSender"),
                     object:self, userInfo: userInfo)
                 }
             } else {
