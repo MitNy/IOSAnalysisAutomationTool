@@ -31,26 +31,10 @@
 		D3254AB822DEF34C008EFCA8 /* fileExtractController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3254AB422DEF34C008EFCA8 /* fileExtractController.swift */; };
 		D3254AB922DEF34C008EFCA8 /* fileExtractTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3254AB522DEF34C008EFCA8 /* fileExtractTable.swift */; };
 		D3254ABA22DEF34C008EFCA8 /* HashCheckController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3254AB622DEF34C008EFCA8 /* HashCheckController.swift */; };
-		D3F0E02322EDA645008974BE /* iMobileDevice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F0E02222EDA645008974BE /* iMobileDevice.framework */; };
-		D3F0E02422EDA645008974BE /* iMobileDevice.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D3F0E02222EDA645008974BE /* iMobileDevice.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D3F0E02822F02390008974BE /* AutoToolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F0E02622F02390008974BE /* AutoToolViewController.swift */; };
 		D3F0E02B22F02DD8008974BE /* HashCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F0E02A22F02DD8008974BE /* HashCheckViewController.swift */; };
 		D3F0E02D22F02EF0008974BE /* FileExtractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F0E02C22F02EF0008974BE /* FileExtractViewController.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		D3F0E02522EDA645008974BE /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				D3F0E02422EDA645008974BE /* iMobileDevice.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		461D0FBC238571160092DAC2 /* do_scp.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = do_scp.py; sourceTree = "<group>"; };
@@ -93,7 +77,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3F0E02322EDA645008974BE /* iMobileDevice.framework in Frameworks */,
 				6C2C977D9A74B0E8439DC708 /* Pods_iOSAnalyticsAutomationTool.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,7 +175,6 @@
 				D3254A9D22DEF2EB008EFCA8 /* Frameworks */,
 				D3254A9E22DEF2EB008EFCA8 /* Resources */,
 				7EF475AE99D46206AF6A0376 /* [CP] Embed Pods Frameworks */,
-				D3F0E02522EDA645008974BE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -459,7 +441,7 @@
 				CODE_SIGN_ENTITLEMENTS = iOSAnalyticsAutomationTool/iOSAnalyticsAutomationTool.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = JAUHFLH46Y;
+				DEVELOPMENT_TEAM = L68DTW7N3N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -483,7 +465,7 @@
 				CODE_SIGN_ENTITLEMENTS = iOSAnalyticsAutomationTool/iOSAnalyticsAutomationTool.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = JAUHFLH46Y;
+				DEVELOPMENT_TEAM = L68DTW7N3N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
