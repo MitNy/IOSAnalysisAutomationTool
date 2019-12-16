@@ -28,7 +28,7 @@ class MemoryDumpViewController: NSViewController {
         PythonScriptExecutor.executeScriptWithArguments(fileName: "do_ssh", arguments: ["mv frida-server-12.7.22-ios-arm64 /usr/sbin/frida-server"])
     }
     @IBAction func fridaServerStartButton(_ sender: Any) {
-        PythonScriptExecutor.executeScriptWithArguments(fileName: "do_ssh", arguments: ["frida-server"])
+        PythonScriptExecutor.executeScriptWithArguments(fileName: "do_ssh", arguments: ["/usr/sbin/frida-server"])
     }
     @IBAction func processListButton(_ sender: Any) {
         data = []
